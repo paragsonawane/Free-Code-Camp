@@ -1,1 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="gradient-bg">
+                <h1 id="title">Feedback Form</h1>
+                <p id="description">
+                    Lorem ipsum hello world
+                </p>
+            </div>
+            <div id="logo-box">
+                <img id="logo" src="images/Logo.svg" alt="Ice-Cup logo">
+            </div>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form id="survey-form" action="data.php" method="get">
+                    <label for="required"><span class="asteric-decorate">*</span>required</label>
+
+                    <!-- Name -->
+                    <label for="name" id="name-label">
+                        Name: <span class="asteric-decorate">*</span>
+                    </label>
+                    <input type="text" name="Name" id="name"  placeholder="Enter your name" required>
+
+                    <!-- Email -->
+                    <label for="email" id="email-label">
+                        Email: <span class="asteric-decorate">*</span>
+                    </label>
+                    <input type="email" name="Email" id="email"  placeholder="Enter your Email" required>
+
+                    <!-- Age -->
+                    <label for="age" id="number-label">
+                        Age: <span class="asteric-decorate">*</span>
+                    </label>
+                    <input type="number" name="age" id="number" min="10" max="100" placeholder="Enter your age" required>
+
+                    <!-- Radio button-->
+                    <label for="age">
+                        Which flavour of ice cream is your favourite? <span class="asteric-decorate">*</span>
+                    </label>
+
+                    <div class="radiogroup">
+                        <input type="radio" id="choco" name="fav_ice_cream" value="Chocolate">
+                        <label for="choco">Chocolate</label>
+                        <br>
+
+                        <input type="radio" id="straw" name="fav_ice_cream" value="Strawberry">
+                        <label for="straw">Strawberry</label>
+                        <br>
+
+                        <input type="radio" id="van" name="fav_ice_cream" value="Vanilla">
+                        <label for="van">Vanilla</label>
+
+                    </div>
+
+                    <!-- Drop Down -->
+
+                    <label for="least_fav">
+                        Which flavor of ice cream is your least favorite?<span class="asteric-decorate">*</span>
+                    </label>
+
+                    <select name="least_fav" id="dropdown">
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Strawberry">Strawberry</option>
+                        <option value="Vanilla">Vanilla</option>
+                    </select>
+
+
+                    <!-- Checkbox button -->
+
+
+                    <label for="flavor_pref">
+                        Which of the below flavors of ice cream do you like?<span class="asteric-decorate">*</span>
+                    </label>
+
+                    <div class="radiogroup">
+
+                        <input type="checkbox" id="Chocolate" name="vehicle1" value="Chocolate">
+                        <label for="Chocolate"> Chocolate</label><br>
+
+                        <input type="checkbox" id="Strawberry" name="Strawberry" value="Car">
+                        <label for="Strawberry">Strawberry</label><br>
+
+                        <input type="checkbox" id="Pistachio" name="Pistachio" value="Pistachio">
+                        <label for="Pistachio">Pistachio</label><br>
+
+                        <input type="checkbox" id="Bubblegum" name="Bubblegum" value="Bubblegum">
+                        <label for="Bubblegum">Bubblegum</label><br>
+
+                        <input type="checkbox" id="Salted caramel" name="Salted caramel" value="Salted caramel">
+                        <label for="Salted caramel">Salted caramel</label>
+                    </div>
+
+                    <!-- Textarea -->
+
+                    <label for="suggestions">
+                        Any other suggestions you would like to add?</span>
+                    </label>
+
+                    <textarea id="suggestions" name="suggestions" rows="6" cols="30" placeholder="Enter your comment here..."></textarea>
+                
+
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+
+                    
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
