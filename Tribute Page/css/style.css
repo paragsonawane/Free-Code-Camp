@@ -1,1 +1,74 @@
 
+html{
+    font-size: 23px;
+    background: #FBF0D9;
+    color:#5F4B32;
+    
+}
+
+
+#main{
+    margin: 10px auto;
+    width: 80%;
+    line-height: 1.6rem;
+    text-align: justify;
+    
+}
+
+#top{
+    text-align: center;
+}
+
+#img-div{
+    margin: 30px auto;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+#image{
+  
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+
+}
+
+#J-decorate{
+    font-size: 6rem;
+    font-style: bold;
+}
+
+#tribute-info{
+    margin-top: 3rem;
+}
+
+
+/* For smartphones */
+@media (max-width: 480px) {
+    html{
+        font-size:18px;
+    }
+    
+    #main{
+        margin:10px auto;
+        width:90%;
+    }
+
+    #title{
+        line-height: 2.2rem ;
+    }
+  }
+
+/* for tablet */
+
+@media (max-width: 768px) {
+    html{
+        font-size:18px;
+    }
+    
+    #main{
+        margin:10px auto;
+        width:90%;
+    }
+  }
